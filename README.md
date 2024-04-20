@@ -1,4 +1,4 @@
-# TFG1.20.x-MathHelper
+# [TFG1.20.x](https://github.com/TerraFirmaGreg-Team/Modpack-1.20.x)-MathHelper
 ***
 ## Table of Content
 
@@ -14,6 +14,8 @@ Print out 5 possible combinations of material given the type of metal and the ra
 
 ## FurnaceCalculator.py
 Calculate the most cost-efficient way of smelting the given metal ore in the furnace.
+
+***
 
 ## TODO
 - Cleanup
