@@ -24,14 +24,6 @@ def forge_tool_optimized_with_pruning_and_memoization(target, operations, sequen
     return best_sequence
 
 
-# Function to find the best forging sequence for any given final three operations with optimizations
-def find_best_forging_sequence_optimized(operations, final_operations, max_operations=10):
-    memo = {}
-    best_sequence = forge_tool_optimized_with_pruning_and_memoization(-sum(operations[op] for op in final_operations),
-                                                                      operations, [], None, max_operations, memo)
-    return best_sequence + final_operations if best_sequence else None
-
-
 def find_best_forging_sequence_for_different_target(operations, final_operations, target_end_value, max_operations=10):
     # 计算最后三个操作前需要达到的目标值
     target_start_value = target_end_value - sum(operations[op] for op in final_operations)
